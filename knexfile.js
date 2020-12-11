@@ -17,12 +17,12 @@ module.exports = {
       },
     },
   },
-  
+
   testing: {
     client: 'sqlite3',
     useNullAsDefault: true,
     connection: {
-      filename: './data/sprintChallenge.db3'
+      filename: './data/sprintChallengeTest.db3'
     },
     migrations: {
       directory: "./data/migrations"

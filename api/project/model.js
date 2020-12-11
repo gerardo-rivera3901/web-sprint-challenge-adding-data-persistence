@@ -8,6 +8,6 @@ module.exports = {
     return db('projects').where('projectId', id).first();
   },
   add(post) {
-    return db('projects').insert(post);
+    return db('projects').insert({...post, completed: post.completed == 0 ? false : true});
   }
 };
